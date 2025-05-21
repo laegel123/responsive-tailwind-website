@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'heading-xl': ['64px', {
+          lineHeight: '80px',
+          letterSpacing: '-0.02em',
+        }],
+      },
+    },
   },
   plugins: [],
 }
