@@ -78,7 +78,17 @@ module.exports = {
       },
       width: {
         '95p': '95%',
-      }
+      },
+
+      keyframes: {
+        floatY: {
+          '0%, 100%': { transform: 'translateY(-65%)' },
+          '50%': { transform: 'translateY(-20px)' }, 
+        },
+      },
+      animation: {
+        floatY: 'floatY 4s ease-in-out infinite'
+      },
     },
   },
   plugins: [],
